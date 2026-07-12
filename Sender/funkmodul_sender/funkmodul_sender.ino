@@ -5,14 +5,14 @@
 #define CSN 10
 
 RF24 funk(CE, CSN);
-const byte adresse[6] = "TEST2";
+const byte adresse_epmfangen[6] = "GeraetB"; //Adresse des Geräts 
+const byte adresse_senden[6] = "GeraetA"; //Adresse wohin gesendet werden soll, also die des anderen Geräts
 
 void setup() {
   Serial.begin(9600);
-
   if (!funk.begin()) {
     Serial.println("Funkmodul NICHT gefunden!");
-    while (1);
+    
   }
 
   funk.openWritingPipe(adresse);
