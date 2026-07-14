@@ -9,8 +9,8 @@
 #define button_3 7
 
 RF24 funk(CE, CSN);
-const byte adresse_epmfangen[6] = "GeraetA";  //Adresse des Geräts
-const byte adresse_senden[6] = "GeraetB";     //Adresse wohin gesendet werden soll, also die des anderen Geräts
+const byte adresse_epmfangen[6] = "GeraetB";  //Adresse des Geräts
+const byte adresse_senden[6] = "GeraetA";     //Adresse wohin gesendet werden soll, also die des anderen Geräts
 void setup() {
   Serial.begin(9600);
   pinMode(LED, OUTPUT);
@@ -28,7 +28,10 @@ void setup() {
   }
   funk.openReadingPipe(1, adresse_epmfangen);
   funk.openWritingPipe(adresse_senden);
-  funk.setPALevel(RF24_PA_LOW);
+  funk.setPALevel(RF24_PA_MAX);
+  funk.setDataRate(RF24_250KBPS);
+  funk.setChannel(100);
+
   funk.startListening();
 
 
