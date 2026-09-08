@@ -10,6 +10,16 @@ Das nRF24L01+ arbeitet als Transceiver und kann sowohl Daten senden als auch emp
 
 ---
 
+# Bilder
+<img width="808" height="851" alt="image" src="https://github.com/user-attachments/assets/ca0e71a7-d795-4e39-8eb4-5a8cddd1250c" />
+~Platinenentwurf
+<img width="1080" height="1920" alt="platine" src="https://github.com/user-attachments/assets/2ea999ed-bb15-45c7-a8a1-c8e7c56442ad" />
+~Funkmodul
+<img width="2048" height="1277" alt="schaltplan" src="https://github.com/user-attachments/assets/45fb0b5c-e28e-41d9-b74f-5b78ef2d5d79" />
+~Schaltplan bzw. erster Entwurf
+
+---
+
 # Funktionen
 
 - Drahtlose Datenübertragung über 2,4 GHz
